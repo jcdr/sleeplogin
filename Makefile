@@ -29,7 +29,7 @@ $(PRG)::  $(OBJ)
 %.o: %.c
 	$(V) mkdir -p $(dir $@)
 	$(P) "  CC    $@"
-	$(V) $(CC) $(CFLAGS) -MMD -c -o $@ $<
+	$(V) $(CC) $(CFLAGS) -c -o $@ $<
 
 .PHONY: install clean distclean
 
